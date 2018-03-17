@@ -1,8 +1,9 @@
 # Connect Four
 
-This is an inventory game for [GameBox]. Additional information can be found on the [plugins site on Spigot][spigot] and on [my homepage][hp].
+Connect Four is an inventory game for the Spigot plugin [GameBox]. It is distributed in the GameBox jar which is published on [Spigot](https://www.spigotmc.org/resources/37273/).
 
+Connect Four is a two player game. Each player throws chips into the grid trying to get four in a row. All items and messages are configurable.
 
-[GameBox]: https://www.spigotmc.org/resources/37273/
-[spigot]: https://www.spigotmc.org/resources/40134/
-[hp]: https://www.nikl.me/projects/connectfour/
+![won connect four game](finished_game.png "Won ConnectFour game")
+
+[GameBox]: https://github.com/NiklasEi/GameBox
