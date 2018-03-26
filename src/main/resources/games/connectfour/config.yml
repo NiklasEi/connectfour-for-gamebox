@@ -5,7 +5,8 @@
 #                                  by Nikl                                    #
 # ----------------------------------------------------------------------------#
 
-# name of the language file (in the folder 'language')
+# Name of the language file (in the folder 'language/connectfour')
+# Please use the full name, including the file ending (.yml)
 langFile: "default"
 
 gameBox:
@@ -34,7 +35,7 @@ gameBox:
       # optional custom min number of chips before any winnings are payed (default: 7)
       # this only effects payouts when one player quits/gives up
       minNumberOfPlayedChips: 7
-      inviteGuiTitle: "  Start &3ConnectFour &rTraining"
+      inviteGuiTitle: "    &3ConnectFour &rTraining"
     saveStats:
       materialData: "gold_block"
       displayName: "&c&lCompetition"
@@ -52,7 +53,7 @@ gameBox:
       # if true the best score of this button is saved
       saveStats: true
       tokens: 1
-      inviteGuiTitle: "     Start a &cCompetition"
+      inviteGuiTitle: "    &3ConnectFour &cCompetition"
   topListButtons:
     # use the same key as the game you want to display the top list for
     #   for that button 'saveStats' must be true (see above)
