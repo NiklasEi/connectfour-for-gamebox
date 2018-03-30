@@ -38,7 +38,7 @@ public class CFGameManager implements GameManager {
     private NmsUtility nms;
     private DataBase statistics;
     private Map<Integer, ItemStack> chips = new HashMap<>();
-    private Map<String, me.nikl.connectfour.CFGameRules> gameRules;
+    private Map<String, CFGameRules> gameRules;
 
     public CFGameManager(ConnectFour connectFour) {
         this.connectFour = connectFour;
@@ -60,7 +60,7 @@ public class CFGameManager implements GameManager {
             timePerMove = 30;
         }
         int minNumberOfPlayedChips = buttonSec.getInt("minNumberOfPlayedChips", 7);
-        gameRules.put(buttonID, new me.nikl.connectfour.CFGameRules(buttonID, timePerMove, minNumberOfPlayedChips
+        gameRules.put(buttonID, new CFGameRules(buttonID, timePerMove, minNumberOfPlayedChips
                 , cost, reward, tokens, saveStats));
     }
 
@@ -175,7 +175,7 @@ public class CFGameManager implements GameManager {
     @Override
     public void startGame(Player[] players, boolean playSounds, String... args) throws GameStartException {
 
-        me.nikl.connectfour.CFGameRules rule = gameRules.get(args[0]);
+        CFGameRules rule = gameRules.get(args[0]);
         if (rule == null) {
             throw new GameStartException(GameStartException.Reason.ERROR);
         }

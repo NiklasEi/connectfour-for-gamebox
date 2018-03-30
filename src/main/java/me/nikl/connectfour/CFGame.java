@@ -24,7 +24,7 @@ import java.util.UUID;
 public class CFGame extends BukkitRunnable {
     private CFGameRules rule;
     private boolean playSounds;
-    private me.nikl.connectfour.ConnectFour connectFour;
+    private ConnectFour connectFour;
     private UUID firstUUID, secondUUID;
     private Player first, second;
     private ItemStack firstChip, secondChip;
