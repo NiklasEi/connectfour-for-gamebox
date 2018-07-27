@@ -12,7 +12,7 @@ langFile: "default"
 gameBox:
   mainButton:
     # define the Material and data for the button (format: 'material:data')
-    materialData: "22"
+    materialData: "lapis_block"
     # display name of the button
     displayName: "&3ConnectFour"
     # lore of the button
@@ -21,7 +21,7 @@ gameBox:
     - "&1Get 4 in a row ;)"
   gameButtons:
     easy:
-      materialData: "22"
+      materialData: "lapis_block"
       displayName: "&aTraining"
       lore:
       - ""
@@ -87,14 +87,14 @@ economy:
 #   the players chips are selected randomly
 chips:
   enzy:
-    materialData: "340"
+    materialData: "book"
     displayName: "&3%player%'s Encyclopedia"
     # optional lore
     lore:
     - ""
     - "&cPretty heavy..."
   sparks:
-    materialData: "377"
+    materialData: "blaze_powder"
     displayName: "&3%player%'s Sparks"
   dia:
     materialData: "diamond"
@@ -103,9 +103,9 @@ chips:
     materialData: "apple"
     displayName: "&3%player%'s apple"
   emerald:
-    materialData: "388"
+    materialData: "emerald"
     displayName: "&3%player%'s Gem"
   crystal:
-    materialData: "406"
+    materialData: "quartz"
     displayName: "&3%player%'s Crystal"
 
