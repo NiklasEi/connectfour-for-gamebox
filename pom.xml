@@ -18,6 +18,11 @@
         </repository>
     </distributionManagement>
 
+    <scm>
+        <connection>git@github.com:NiklasEi/connectfour-for-gamebox.git</connection>
+        <url>https://github.com/NiklasEi/connectfour-for-gamebox</url>
+    </scm>
+
     <build>
         <defaultGoal>clean package</defaultGoal>
         <finalName>${project.name}</finalName>
