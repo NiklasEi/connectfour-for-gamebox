@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.nikl</groupId>
+    <groupId>me.nikl.gamebox.games</groupId>
     <artifactId>connectfour</artifactId>
     <name>ConnectFour</name>
     <packaging>jar</packaging>
-    <version>3.0.0-alpha</version>
-    <description>Connect four chips before your opponent does</description>
+    <version>3.0.0-beta</version>
+    <description>Line up four chips before your opponent does</description>
 
     <distributionManagement>
         <repository>
             <id>nikl-repo</id>
-            <url>https://repo.nikl.me/artifactory/public</url>
+            <url>http://repo.nikl.me/artifactory/public</url>
         </repository>
     </distributionManagement>
 
@@ -47,6 +47,19 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create-timestamp</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -57,7 +70,7 @@
         </repository>
         <repository>
             <id>nikl-repo</id>
-            <url>https://repo.nikl.me/artifactory/public</url>
+            <url>http://repo.nikl.me/artifactory/public</url>
         </repository>
     </repositories>
 
@@ -70,8 +83,14 @@
         </dependency>
         <dependency>
             <groupId>me.nikl</groupId>
-            <artifactId>gamebox-core</artifactId>
-            <version>3.0.0-alpha</version>
+            <artifactId>gamebox</artifactId>
+            <version>${gamebox.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.nikl</groupId>
+            <artifactId>calendarevents</artifactId>
+            <version>1.4.2</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -81,5 +100,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <gamebox.version>3.0.0-beta.2</gamebox.version>
     </properties>
 </project>

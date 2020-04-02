@@ -12,7 +12,7 @@ import me.nikl.gamebox.game.GameSettings;
 public class ConnectFour extends Game {
 
     public ConnectFour(GameBox gameBox) {
-        super(gameBox, GameBox.MODULE_CONNECTFOUR);
+        super(gameBox, ConnectFourModule.CONNECT_FOUR);
     }
 
     @Override
